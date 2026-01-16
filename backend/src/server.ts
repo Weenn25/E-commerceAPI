@@ -52,15 +52,15 @@ async function connectDB() {
       const sampleProducts = [
         {
           name: 'Wireless Headphones',
-          price: 79.99,
+          price: 399.99,
           description: 'High-quality wireless headphones with noise cancellation and 30-hour battery life.',
           stock: 50,
           category: 'Electronics',
-          image: 'https://images.unsplash.com/photo-1595756630452-736bc8ef3693?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+          image: 'https://images.unsplash.com/photo-1657223143970-08cc5afe9943?q=80&w=764&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
         },
         {
           name: 'USB-C Cable',
-          price: 12.99,
+          price: 249.99,
           description: 'Durable USB-C cable for fast charging and data transfer. Supports 100W charging.',
           stock: 100,
           category: 'Accessories',
@@ -68,7 +68,7 @@ async function connectDB() {
         },
         {
           name: 'Laptop Stand',
-          price: 34.99,
+          price: 349.99,
           description: 'Adjustable aluminum laptop stand for better ergonomics and improved desk organization.',
           stock: 30,
           category: 'Office',
@@ -76,7 +76,7 @@ async function connectDB() {
         },
         {
           name: 'Mouse Pad',
-          price: 19.99,
+          price: 199.99,
           description: 'Large non-slip mouse pad with wrist support. Perfect for gaming and work.',
           stock: 75,
           category: 'Accessories',
@@ -84,7 +84,7 @@ async function connectDB() {
         },
         {
           name: 'Wireless Mouse',
-          price: 49.99,
+          price: 299.99,
           description: 'High-precision wireless mouse with ergonomic design and 18-month battery life.',
           stock: 40,
           category: 'Electronics',
@@ -92,7 +92,7 @@ async function connectDB() {
         },
         {
           name: 'Phone Screen Protector',
-          price: 9.99,
+          price: 229.99,
           description: 'Tempered glass screen protector with high clarity and anti-fingerprint coating.',
           stock: 200,
           category: 'Accessories',
@@ -100,7 +100,7 @@ async function connectDB() {
         },
         {
           name: '4K Webcam',
-          price: 89.99,
+          price: 1299.99,
           description: 'Ultra HD 4K webcam with autofocus and built-in microphone for crystal clear video calls.',
           stock: 25,
           category: 'Electronics',
@@ -108,7 +108,7 @@ async function connectDB() {
         },
         {
           name: 'Desk Lamp',
-          price: 39.99,
+          price: 329.99,
           description: 'LED desk lamp with adjustable brightness and color temperature. Energy efficient.',
           stock: 45,
           category: 'Office',
@@ -116,7 +116,7 @@ async function connectDB() {
         },
         {
           name: 'USB Hub',
-          price: 24.99,
+          price: 279.99,
           description: '7-port USB 3.0 hub with fast charging capability and individual switches.',
           stock: 60,
           category: 'Accessories',
@@ -124,7 +124,7 @@ async function connectDB() {
         },
         {
           name: 'Portable SSD',
-          price: 129.99,
+          price: 1499.99,
           description: '1TB portable SSD with 550MB/s read speed and rugged design.',
           stock: 35,
           category: 'Electronics',
@@ -132,19 +132,19 @@ async function connectDB() {
         },
         {
           name: 'Desk Organizer',
-          price: 29.99,
+          price: 299.99,
           description: 'Multi-compartment wooden desk organizer for pens, papers, and small items.',
           stock: 55,
           category: 'Office',
-          image: 'https://images.unsplash.com/photo-1644463589256-02679b9c0767?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8ZGVzayUyMG9yZ2FuaXplcnxlbnwwfHwwfHx8MA%3D%3D',
+          image: 'https://images.unsplash.com/photo-1644463589256-02679b9c0767?q=80&w=880&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
         },
         {
           name: 'Phone Stand',
-          price: 14.99,
+          price: 249.99,
           description: 'Adjustable aluminum phone stand compatible with all smartphones.',
           stock: 80,
           category: 'Accessories',
-          image: 'https://images.unsplash.com/photo-1617975426095-f073792aef15?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8cGhvbmUlMjBzdGFuZHxlbnwwfHwwfHx8MA%3D%3D',
+          image: 'https://images.unsplash.com/photo-1553556135-009e5858adce?q=80&w=764&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
         },
       ]
 

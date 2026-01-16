@@ -126,7 +126,7 @@ export default function Checkout({
                   <div className="summary-item-qty">Qty: {item.quantity}</div>
                 </div>
                 <div className="summary-item-price">
-                  ${(item.price * item.quantity).toFixed(2)}
+                  ₱{(item.price * item.quantity).toFixed(2)}
                 </div>
               </div>
             ))}
@@ -135,7 +135,7 @@ export default function Checkout({
           <div className="summary-breakdown">
             <div className="breakdown-row">
               <span>Subtotal:</span>
-              <span>${total.toFixed(2)}</span>
+              <span>₱{total.toFixed(2)}</span>
             </div>
             <div className="breakdown-row">
               <span>Shipping:</span>
@@ -143,13 +143,13 @@ export default function Checkout({
             </div>
             <div className="breakdown-row">
               <span>Tax (10%):</span>
-              <span>${(total * 0.1).toFixed(2)}</span>
+              <span>₱{(total * 0.1).toFixed(2)}</span>
             </div>
           </div>
 
           <div className="summary-total">
             <span>Total:</span>
-            <span>${(total * 1.1).toFixed(2)}</span>
+            <span>₱{(total * 1.1).toFixed(2)}</span>
           </div>
         </div>
       </div>

@@ -78,7 +78,7 @@ export default function Orders() {
                 </div>
                 <div className="order-summary">
                   <span className={`order-status ${order.status.toLowerCase()}`}>{order.status}</span>
-                  <span className="order-total">${order.total.toFixed(2)}</span>
+                  <span className="order-total">₱{order.total.toFixed(2)}</span>
                   <span className={`order-expand ${expandedOrder === order._id ? 'expanded' : ''}`}>▼</span>
                 </div>
               </div>
@@ -107,9 +107,9 @@ export default function Orders() {
                         {order.items.map((item) => (
                           <tr key={item._id}>
                             <td>{item.name}</td>
-                            <td>${item.price.toFixed(2)}</td>
+                            <td>₱{item.price.toFixed(2)}</td>
                             <td>{item.quantity}</td>
-                            <td>${(item.price * item.quantity).toFixed(2)}</td>
+                            <td>₱{(item.price * item.quantity).toFixed(2)}</td>
                           </tr>
                         ))}
                       </tbody>
@@ -117,7 +117,7 @@ export default function Orders() {
                   </div>
 
                   <div className="order-total-section">
-                    <p><strong>Total Amount:</strong> ${order.total.toFixed(2)}</p>
+                    <p><strong>Total Amount:</strong> ₱{order.total.toFixed(2)}</p>
                   </div>
                 </div>
               )}

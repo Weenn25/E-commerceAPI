@@ -47,7 +47,7 @@ export default function Cart({
 
                 <div className="item-details">
                   <h4 className="item-name">{item.name}</h4>
-                  <p className="item-price">${item.price.toFixed(2)}</p>
+                  <p className="item-price">₱{item.price.toFixed(2)}</p>
                 </div>
 
                 <div className="item-quantity">
@@ -77,7 +77,7 @@ export default function Cart({
                 </div>
 
                 <div className="item-subtotal">
-                  ${(item.price * item.quantity).toFixed(2)}
+                  ₱{(item.price * item.quantity).toFixed(2)}
                 </div>
 
                 <button
@@ -97,7 +97,7 @@ export default function Cart({
             <div className="summary-rows">
               <div className="summary-row">
                 <span>Subtotal:</span>
-                <span>${total.toFixed(2)}</span>
+                <span>₱{total.toFixed(2)}</span>
               </div>
               <div className="summary-row">
                 <span>Shipping:</span>
@@ -105,13 +105,13 @@ export default function Cart({
               </div>
               <div className="summary-row">
                 <span>Tax:</span>
-                <span>${(total * 0.1).toFixed(2)}</span>
+                <span>₱{(total * 0.1).toFixed(2)}</span>
               </div>
             </div>
 
             <div className="summary-total">
               <span>Total:</span>
-              <span>${(total * 1.1).toFixed(2)}</span>
+              <span>₱{(total * 1.1).toFixed(2)}</span>
             </div>
 
             <button className="btn-checkout" onClick={onCheckout}>
