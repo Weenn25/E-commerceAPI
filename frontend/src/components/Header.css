@@ -1,0 +1,146 @@
+.header {
+  background: white;
+  border-bottom: 1px solid #e5e7eb;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+}
+
+.header-container {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 0 16px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 70px;
+  gap: 20px;
+}
+
+.logo-section {
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  font-size: 28px;
+  font-weight: 700;
+  color: #1f2937;
+  margin: 0;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.logo:hover {
+  transform: scale(1.05);
+}
+
+.nav {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+  flex: 1;
+}
+
+.nav-link {
+  padding: 8px 16px;
+  border: none;
+  background: transparent;
+  color: #6b7280;
+  font-weight: 500;
+  cursor: pointer;
+  border-radius: 6px;
+  transition: all 0.3s ease;
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.nav-link:hover {
+  color: #3b82f6;
+  background: #f0f4ff;
+}
+
+.nav-link.active {
+  color: #3b82f6;
+  background: #f0f4ff;
+}
+
+.cart-badge {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background: #ef4444;
+  color: white;
+  border-radius: 12px;
+  width: 20px;
+  height: 20px;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.user-section {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-left: auto;
+}
+
+.username {
+  font-size: 14px;
+  font-weight: 500;
+  color: #1f2937;
+}
+
+.logout-btn {
+  padding: 8px 16px;
+  background: transparent;
+  border: 1px solid #e5e7eb;
+  color: #6b7280;
+  border-radius: 6px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-size: 14px;
+}
+
+.logout-btn:hover {
+  border-color: #ef4444;
+  color: #ef4444;
+  background: #fee2e2;
+}
+
+@media (max-width: 640px) {
+  .header-container {
+    padding: 0 12px;
+    height: 60px;
+    flex-wrap: wrap;
+  }
+
+  .logo {
+    font-size: 24px;
+  }
+
+  .nav-link {
+    padding: 6px 12px;
+    font-size: 14px;
+  }
+
+  .user-section {
+    width: 100%;
+    justify-content: flex-end;
+    gap: 8px;
+    flex: 1;
+  }
+
+  .username {
+    font-size: 12px;
+  }
+
+  .logout-btn {
+    padding: 6px 12px;
+    font-size: 12px;
+  }
+}
